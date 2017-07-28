@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <gtest_root>C:\WorkFolder\CleanCode\googletest\googletest-distribution</gtest_root>
+    <gtest_include>$(gtest_root)\include</gtest_include>
+    <gtest_lib>$(gtest_root)\lib\$(Configration)</gtest_lib>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(gtest_include);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>$(gtest_lib)\$(PlatformShortName)\gtest.lib;$(gtest_lib)\$(PlatformShortName)\gmock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="gtest_root">
+      <Value>$(gtest_root)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
