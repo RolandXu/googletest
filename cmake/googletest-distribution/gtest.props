@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
-    <gtest_root>C:\WorkFolder\CleanCode\googletest\googletest-distribution</gtest_root>
+    <gtest_root>C:\WorkFolder\CleanCode\googletest\cmake\googletest-distribution</gtest_root>
     <gtest_include>$(gtest_root)\include</gtest_include>
     <gtest_lib>$(gtest_root)\lib\$(Configration)</gtest_lib>
   </PropertyGroup>
